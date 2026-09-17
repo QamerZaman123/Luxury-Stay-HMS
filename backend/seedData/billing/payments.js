@@ -1,0 +1,7 @@
+module.exports = [
+  { _id: "d00000000000000000000001", invoice: "c00000000000000000000001", hotel: "500000000000000000000001", guest: "300000000000000000000001", amount: 30000, paymentMethod: "credit_card", transactionId: "TXN-CC-2026-0001", status: "completed", paidAt: new Date("2026-09-16T15:00:00"), processedBy: "200000000000000000000003" },
+  { _id: "d00000000000000000000002", invoice: "c00000000000000000000002", hotel: "500000000000000000000001", guest: "300000000000000000000002", amount: 20880, paymentMethod: "online", transactionId: "TXN-ON-2026-0002", status: "pending", paidAt: null, processedBy: null },
+  { _id: "d00000000000000000000003", invoice: "c00000000000000000000003", hotel: "500000000000000000000001", guest: "300000000000000000000001", amount: 43616, paymentMethod: "cash", transactionId: null, status: "completed", paidAt: new Date("2026-08-03T12:00:00"), processedBy: "200000000000000000000003" },
+  { _id: "d00000000000000000000004", invoice: "c00000000000000000000004", hotel: "500000000000000000000002", guest: "300000000000000000000003", amount: 60320, paymentMethod: "bank_transfer", transactionId: "TXN-BT-2026-0004", status: "failed", paidAt: null, processedBy: "200000000000000000000002" },
+  { _id: "d00000000000000000000005", invoice: "c00000000000000000000003", hotel: "500000000000000000000001", guest: "300000000000000000000001", amount: 5000, paymentMethod: "debit_card", transactionId: "TXN-DC-2026-0005", status: "refunded", paidAt: new Date("2026-08-04T09:30:00"), processedBy: "200000000000000000000003" },
+];

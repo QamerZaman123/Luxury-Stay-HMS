@@ -1,0 +1,5 @@
+module.exports = [
+  { _id: "110000000000000000000001", hotel: "500000000000000000000001", guest: "300000000000000000000001", reservation: "800000000000000000000005", room: "700000000000000000000004", rating: 5, title: "Excellent stay", comment: "Friendly staff and spotless room.", categories: { cleanliness: 5, service: 5, roomQuality: 4, staff: 5 }, status: "published" },
+  { _id: "110000000000000000000002", hotel: "500000000000000000000002", guest: "300000000000000000000003", reservation: "800000000000000000000003", room: "700000000000000000000005", rating: 2, title: "Maintenance concern", comment: "The AC required attention.", categories: { cleanliness: 4, service: 3, roomQuality: 2, staff: 4 }, status: "pending" },
+  { _id: "110000000000000000000003", hotel: "500000000000000000000001", guest: "300000000000000000000002", reservation: "800000000000000000000006", room: null, rating: 3, title: "Booking experience", comment: "Reservation was not used.", categories: { cleanliness: 3, service: 3, roomQuality: 3, staff: 3 }, status: "hidden" },
+];

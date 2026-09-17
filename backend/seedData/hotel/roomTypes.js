@@ -1,0 +1,6 @@
+module.exports = [
+  { _id: "600000000000000000000001", hotel: "500000000000000000000001", name: "Standard Room", description: "Comfortable city-view room.", basePrice: 18000, maxOccupancy: 2, bedType: "Queen", size: 32, sizeUnit: "sqm", amenities: ["Wi-Fi", "Smart TV", "Mini bar"], images: [], isActive: true },
+  { _id: "600000000000000000000002", hotel: "500000000000000000000001", name: "Luxury Suite", description: "Spacious suite with lounge.", basePrice: 52000, maxOccupancy: 4, bedType: "King", size: 85, sizeUnit: "sqm", amenities: ["Wi-Fi", "Smart TV", "Lounge", "Butler service"], images: [], isActive: true },
+  { _id: "600000000000000000000003", hotel: "500000000000000000000002", name: "Deluxe Room", description: "Sea-view deluxe room.", basePrice: 26000, maxOccupancy: 3, bedType: "King", size: 45, sizeUnit: "sqm", amenities: ["Wi-Fi", "Smart TV", "Sea view"], images: [], isActive: true },
+  { _id: "600000000000000000000004", hotel: "500000000000000000000002", name: "Presidential Suite", description: "Premium top-floor suite.", basePrice: 95000, maxOccupancy: 5, bedType: "King", size: 160, sizeUnit: "sqm", amenities: ["Wi-Fi", "Private dining", "Butler service"], images: [], isActive: true },
+];

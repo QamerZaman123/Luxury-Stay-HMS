@@ -1,0 +1,4 @@
+module.exports = [
+  { _id: "130000000000000000000001", hotel: "500000000000000000000001", hotelName: "LuxuryStay Lahore", contact: { email: "lahore@luxurystay.com", phone: "+92-42-111-555-111", address: "Main Boulevard Gulberg, Lahore" }, currency: "PKR", tax: { name: "Sales Tax", percentage: 16, isActive: true }, policies: { checkInTime: "14:00", checkOutTime: "12:00", cancellationPolicy: "Free cancellation up to 48 hours before check-in." }, updatedBy: "200000000000000000000001" },
+  { _id: "130000000000000000000002", hotel: "500000000000000000000002", hotelName: "LuxuryStay Karachi", contact: { email: "karachi@luxurystay.com", phone: "+92-21-111-555-222", address: "Shahrah-e-Firdousi, Karachi" }, currency: "PKR", tax: { name: "Sales Tax", percentage: 16, isActive: true }, policies: { checkInTime: "15:00", checkOutTime: "12:00", cancellationPolicy: "Free cancellation up to 24 hours before check-in." }, updatedBy: "200000000000000000000002" },
+];

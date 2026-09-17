@@ -1,0 +1,5 @@
+module.exports = [
+  { _id: "900000000000000000000001", reservation: "800000000000000000000004", guest: "300000000000000000000001", room: "700000000000000000000003", actualCheckIn: new Date("2026-09-16T14:30:00"), actualCheckOut: null, checkedInBy: "200000000000000000000003", checkedOutBy: null, keyIssued: true, keyCount: 2, status: "active" },
+  { _id: "900000000000000000000002", reservation: "800000000000000000000005", guest: "300000000000000000000001", room: "700000000000000000000004", actualCheckIn: new Date("2026-08-01T15:00:00"), actualCheckOut: new Date("2026-08-03T11:45:00"), checkedInBy: "200000000000000000000003", checkedOutBy: "200000000000000000000003", keyIssued: true, keyCount: 1, status: "completed" },
+  { _id: "900000000000000000000003", reservation: "800000000000000000000003", guest: "300000000000000000000003", room: "700000000000000000000005", actualCheckIn: null, actualCheckOut: null, checkedInBy: null, checkedOutBy: null, keyIssued: false, keyCount: 0, status: "cancelled" },
+];

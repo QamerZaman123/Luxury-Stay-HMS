@@ -1,0 +1,7 @@
+module.exports = [
+  { _id: "400000000000000000000001", user: "200000000000000000000001", employeeId: "LS-ADM-001", department: "administration", position: "System Administrator", joiningDate: new Date("2023-01-10"), emergencyContact: { name: "Nadia Khan", phone: "+92-300-9000001", relationship: "Spouse" } },
+  { _id: "400000000000000000000002", user: "200000000000000000000002", employeeId: "LS-MGT-001", department: "management", position: "Hotel Manager", joiningDate: new Date("2023-03-15"), emergencyContact: { name: "Ahmed Ali", phone: "+92-300-9000002", relationship: "Brother" } },
+  { _id: "400000000000000000000003", user: "200000000000000000000003", employeeId: "LS-REC-001", department: "reception", position: "Front Desk Officer", joiningDate: new Date("2024-02-01"), emergencyContact: { name: "Hina Malik", phone: "+92-300-9000003", relationship: "Mother" } },
+  { _id: "400000000000000000000004", user: "200000000000000000000004", employeeId: "LS-HKP-001", department: "housekeeping", position: "Housekeeping Attendant", joiningDate: new Date("2024-05-20"), emergencyContact: { name: "Ali Ahmed", phone: "+92-300-9000004", relationship: "Father" } },
+  { _id: "400000000000000000000005", user: "200000000000000000000005", employeeId: "LS-MNT-001", department: "maintenance", position: "Maintenance Technician", joiningDate: new Date("2024-06-10"), emergencyContact: { name: "Sana Raza", phone: "+92-300-9000005", relationship: "Spouse" } },
+];

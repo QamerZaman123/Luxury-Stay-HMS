@@ -1,2 +1,4 @@
 const express = require("express");
-module.exports = express.Router();
+const hotelRoutes = express.Router();
+
+module.exports = hotelRoutes;

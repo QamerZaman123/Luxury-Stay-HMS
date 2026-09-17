@@ -1,2 +1,4 @@
 const express = require("express");
-module.exports = express.Router();
+const staffRoutes = express.Router();
+
+module.exports = staffRoutes;

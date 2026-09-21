@@ -1,4 +1,6 @@
-const createInvoice = async (req, res) => {};
+const createInvoice = async (req, res) => {
+    var hadi ={}
+};
 const getInvoices = async (req, res) => {};
 const getInvoiceById = async (req, res) => {};
 const updateInvoice = async (req, res) => {};

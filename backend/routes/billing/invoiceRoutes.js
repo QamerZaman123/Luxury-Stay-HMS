@@ -1,6 +1,13 @@
 const express = require("express");
 const invoiceRoutes = express.Router();
-const { createInvoice, getInvoices, getInvoiceById, updateInvoice, deleteInvoice } = require("../../controllers/billing/invoiceController");
+
+const {
+    createInvoice,
+    getInvoices,
+    getInvoiceById,
+    updateInvoice,
+    deleteInvoice
+} = require("../../controllers/billing/invoiceController");
 
 invoiceRoutes.post("/", createInvoice);
 invoiceRoutes.get("/", getInvoices);

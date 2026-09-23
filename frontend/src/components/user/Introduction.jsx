@@ -1,4 +1,4 @@
-import { images } from "../data/content";
+import { images } from "../../data/content";
 
 export default function Introduction() {
   return (

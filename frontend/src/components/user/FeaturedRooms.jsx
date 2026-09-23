@@ -1,4 +1,4 @@
-import { rooms } from "../data/content";
+import { rooms } from "../../data/content";
 import RoomCard from "./RoomCard";
 
 export default function FeaturedRooms() {

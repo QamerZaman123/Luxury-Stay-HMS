@@ -1,4 +1,4 @@
-import { testimonials } from "../data/content";
+import { testimonials } from "../../data/content";
 
 export default function Testimonials() {
   return (

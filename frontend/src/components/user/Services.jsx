@@ -1,5 +1,5 @@
 import { ConciergeBell, Sparkles, Utensils, Wifi, Wine, Flower2 } from "lucide-react";
-import { services } from "../data/content";
+import { services } from "../../data/content";
 
 const icons = {
   dining: Utensils,

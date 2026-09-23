@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { roomTypes } from "../data/content";
+import { roomTypes } from "../../data/content";
 
 const fieldClass =
   "w-full border-0 bg-transparent p-0 font-sans text-[15px] text-charcoal outline-none placeholder:text-muted/70";

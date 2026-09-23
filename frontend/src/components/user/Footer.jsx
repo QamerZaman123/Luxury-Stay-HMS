@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
-import { navLinks } from "../data/content";
+import { navLinks } from "../../data/content";
 
 export default function Footer() {
   return (

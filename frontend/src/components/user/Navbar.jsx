@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-import { navLinks } from "../data/content";
+import { Menu, X, User, LogOut, LayoutDashboard } from "lucide-react";
+import { Link } from "react-router-dom";
+import { navLinks } from "../../data/content";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { user, isAuthenticated, isStaff, logout } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 48);
@@ -47,15 +50,47 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-2 lg:flex">
-          <a
-            href="#signin"
-            className={`px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.16em] transition-colors duration-300 ${
-              scrolled ? "text-charcoal/80 hover:text-charcoal" : "text-white/90 hover:text-gold"
-            }`}
-          >
-            Sign In
-          </a>
+        <div className="hidden items-center gap-3 lg:flex">
+          {isAuthenticated ? (
+            <div className="flex items-center gap-3">
+              {isStaff && (
+                <Link
+                  to="/admin"
+                  className={`inline-flex items-center gap-1.5 px-3 py-2 text-[12px] font-medium uppercase tracking-[0.16em] transition-colors ${
+                    scrolled ? "text-gold hover:text-charcoal" : "text-gold hover:text-white"
+                  }`}
+                >
+                  <LayoutDashboard size={14} /> Portal
+                </Link>
+              )}
+              <span
+                className={`text-[12px] tracking-[0.12em] ${
+                  scrolled ? "text-charcoal" : "text-white/90"
+                }`}
+              >
+                Hello, <span className="font-semibold">{user.firstName}</span>
+              </span>
+              <button
+                type="button"
+                onClick={logout}
+                className={`inline-flex items-center gap-1 px-3 py-2 text-[12px] uppercase tracking-[0.16em] transition-colors ${
+                  scrolled ? "text-muted hover:text-charcoal" : "text-white/70 hover:text-white"
+                }`}
+              >
+                <LogOut size={13} /> Sign Out
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className={`px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.16em] transition-colors duration-300 ${
+                scrolled ? "text-charcoal/80 hover:text-charcoal" : "text-white/90 hover:text-gold"
+              }`}
+            >
+              Sign In
+            </Link>
+          )}
+
           <a
             href="#booking"
             className={`px-6 py-2.5 text-[12px] font-medium uppercase tracking-[0.16em] transition-all duration-500 ease-luxury ${
@@ -103,16 +138,43 @@ export default function Navbar() {
             </li>
           ))}
           <li className="mt-4 flex flex-col gap-3">
-            <a
-              href="#signin"
-              onClick={() => setOpen(false)}
-              className={`py-2 text-[12px] uppercase tracking-[0.16em] ${
-                scrolled || open ? "text-muted" : "text-white/80"
-              }`}
-            >
-              Sign In
-            </a>
-            <a href="#booking" onClick={() => setOpen(false)} className="btn-primary w-full">
+            {isAuthenticated ? (
+              <>
+                <div className="py-2 text-[13px] text-charcoal">
+                  Signed in as <span className="font-semibold">{user.firstName} {user.lastName}</span>
+                </div>
+                {isStaff && (
+                  <Link
+                    to="/admin"
+                    onClick={() => setOpen(false)}
+                    className="btn-secondary w-full text-center"
+                  >
+                    Admin Dashboard
+                  </Link>
+                )}
+                <button
+                  type="button"
+                  onClick={() => {
+                    logout();
+                    setOpen(false);
+                  }}
+                  className="py-2 text-left text-[12px] uppercase tracking-[0.16em] text-rose-700"
+                >
+                  Sign Out
+                </button>
+              </>
+            ) : (
+              <Link
+                to="/login"
+                onClick={() => setOpen(false)}
+                className={`py-2 text-[12px] uppercase tracking-[0.16em] ${
+                  scrolled || open ? "text-muted" : "text-white/80"
+                }`}
+              >
+                Sign In
+              </Link>
+            )}
+            <a href="#booking" onClick={() => setOpen(false)} className="btn-primary w-full text-center">
               Book a Stay
             </a>
           </li>
